@@ -11,10 +11,10 @@ The results is showed on console or saved into text file "report.txt".
 
 For usage information please run:
 $ python OK-file-utils-pattern-finder.py --help
-
-Created by: lisr-pcx (https://github.com/lisr-pcx/OK-file-utils)
-This is free software and it comes with absolutely no warranty.
 """
+
+# Created by: lisr-pcx (https://github.com/lisr-pcx/OK-file-utils)
+# This is free software and it comes with absolutely no warranty.
 
 import os
 import argparse
@@ -86,13 +86,6 @@ def search_pattern_into_file(filepath: str):
         print("File not found! [" + filepath + "]")
     return set(items)
 
-# Description:
-# analyze the desired path recursively looking
-# on each target files for desired elements.
-# Inputs:
-#     dirpath - root path to start the search
-# Returns:
-#     dict() containing found elements for each file
 def walk_dir_recursively(rootdirpath: str):
     """Starting from root path it walks directories recursively 
     looking for the pattern.
@@ -136,7 +129,7 @@ def update_report_info(filepath: str,
                        items_BOTH=[], 
                        items_B=[], 
                        show_compare_dir=False):
-    """store the results into report_info data structure according to user args.
+    """Store the results into report_info data structure according to user args.
 
     Parameters
     ----------

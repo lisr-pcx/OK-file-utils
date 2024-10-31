@@ -40,7 +40,7 @@ python3 OK-file-utils-pattern-finder.py YOURFIRSTFOLDER YOURSECONDFOLDER --outpu
 ```
 
 The pattern and the extension of the files are defined by regex, and they can be customized inside the script.  
-In the example below it look for files "*.c", "*.h", "*.txt" containing identification codes for change request like atvcm1201, atvcm1202 ...
+In the example below it look for files "*.c", "*.h", "*.txt" that contain text with an identification codes for change request like atvcm1201, atvcm1202 ...
 
 ```python
 re_file_ext = r'^.*\.(c|h|txt)$'
