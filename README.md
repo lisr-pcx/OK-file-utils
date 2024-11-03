@@ -13,8 +13,8 @@ Make sure to have Python installed. All scripts have been developed using *Pytho
 Please refer to specific **help** of the scripts:
 
 ```sh
-python3 OK-file-SCRIPTNAME.py --help
-python3 OK-file-SCRIPTNAME.py -h
+python3 OK_file_SCRIPTNAME.py --help
+python3 OK_file_SCRIPTNAME.py -h
 ```
 
 ### OK-file-utils-cr-finder.py
@@ -24,19 +24,19 @@ List the occurence of a pattern (i.e. Change Request codes) from select files in
 To search inside a directory:
 
 ```sh
-python3 OK-file-utils-pattern-finder.py YOURFOLDER
+python3 OK_file_utils_pattern_finder.py YOURFOLDER
 ```
 
 To search and compare between two directories:
 
 ```sh
-python3 OK-file-utils-pattern-finder.py YOURFIRSTFOLDER YOURSECONDFOLDER
+python3 OK_file_utils_pattern_finder.py YOURFIRSTFOLDER YOURSECONDFOLDER
 ```
 
 Adding `-o` or `--ouput` will store the result in a file named *report.txt*:
 
 ```sh
-python3 OK-file-utils-pattern-finder.py YOURFIRSTFOLDER YOURSECONDFOLDER --output
+python3 OK_file_utils_pattern_finder.py YOURFIRSTFOLDER YOURSECONDFOLDER --output
 ```
 
 The pattern and the extension of the files are defined by regex, and they can be customized inside the script.  
