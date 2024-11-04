@@ -57,6 +57,11 @@ Distributed under the UN-license. See file ``LICENSE`` for more information.
 
 [The Python Language Reference](https://docs.python.org/3/reference/index.html)
 
+Unit testing:
+
+[Unittest documentation](https://docs.python.org/3/library/unittest.html)  
+[How to write unit tests](https://www.freecodecamp.org/news/how-to-write-unit-tests-for-python-functions/)
+
 How to write documentation:
 
 [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/)  

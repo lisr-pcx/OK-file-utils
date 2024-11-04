@@ -13,7 +13,7 @@ import os
 import unittest
 from src.OK_file_utils_pattern_finder import search_pattern_into_file
 
-class TestClass(unittest.TestCase):
+class TestSearchPatternIntoFile(unittest.TestCase):
 
 	def setUp(self):
 		# create file ad hoc for test purpose
@@ -48,5 +48,12 @@ class TestClass(unittest.TestCase):
 	def tearDown(self):
 		os.remove(self.samplefilepath)
 
+def test_suite():
+	suite = unittest.TestSuite()
+	suite.addTest(TestSearchPatternIntoFile('test_n_of_match'))
+	suite.addTest(TestSearchPatternIntoFile('test_list_of_match'))
+	return suite
+
 if __name__ == '__main__':
-	unittest.main()
+	runner = unittest.TextTestRunner()
+	runner.run(test_suite())
